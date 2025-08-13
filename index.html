@@ -45,13 +45,20 @@
       margin-bottom: 1.5rem;
     }
 
+    .asesores-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
     .asesor {
       background: white;
       border-radius: 10px;
       padding: 1rem;
-      margin: 1rem auto;
-      max-width: 300px;
+      width: 300px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     .asesor img {
@@ -67,6 +74,7 @@
 
     .asesor p {
       margin: 0.3rem 0;
+      font-size: 0.95rem;
     }
 
     .asesor a {
@@ -91,11 +99,34 @@
       background-color: #003366;
     }
 
+    .corporativo {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .corporativo a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
       background-color: #e6f0fa;
+    }
+
+    @media (max-width: 700px) {
+      .asesores-grid {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -112,23 +143,34 @@
 
   <section class="asesores">
     <h2>Nuestro equipo</h2>
+    <div class="asesores-grid">
 
-    <div class="asesor">
-      <img src="paola-beltran.jpg" alt="Paola Beltrán">
-      <h3>Paola Beltrán</h3>
-      <p>📧 Ventas2@tvymas.com.co</p>
-      <a href="mailto:Ventas2@tvymas.com.co" class="email-btn">Enviar correo</a>
-      <a href="https://wa.me/573185216211?text=Hola%20Andrea,%20estoy%20interesado%20en%20los%20productos%20y%20servicios%20de%20TVYMAS." target="_blank" class="whatsapp-btn">WhatsApp</a>
-      <a href="https://www.tvymas.com.co" target="_blank" class="web-btn">Ir al sitio web</a>
+      <div class="asesor">
+        <img src="paola-beltran.jpg" alt="Paola Beltrán">
+        <h3>Paola Beltrán</h3>
+        <p>📧 <strong>Ventas2@tvymas.com.co</strong></p>
+        <p>📱 <strong>+57 318 521 6211</strong></p>
+        <a href="mailto:Ventas2@tvymas.com.co" class="email-btn">Enviar correo</a>
+        <a href="https://wa.me/573185216211?text=Hola%20Andrea,%20estoy%20interesado%20en%20los%20productos%20y%20servicios%20de%20TVYMAS." target="_blank" class="whatsapp-btn">WhatsApp directo</a>
+        <a href="https://www.tvymas.com.co" target="_blank" class="web-btn">Ir al sitio web</a>
+      </div>
+
+      <div class="asesor">
+        <img src="luis-buitrago.jpg" alt="Luis Buitrago">
+        <h3>Luis Buitrago</h3>
+        <p>📧 <strong>Ventas1@tvymas.com.co</strong></p>
+        <p>📱 <strong>+57 311 360 9370</strong></p>
+        <a href="mailto:Ventas1@tvymas.com.co" class="email-btn">Enviar correo</a>
+        <a href="https://wa.me/573113609370?text=Hola%20Luis,%20estoy%20interesado%20en%20los%20productos%20y%20servicios%20de%20TVYMAS." target="_blank" class="whatsapp-btn">WhatsApp directo</a>
+        <a href="https://www.tvymas.com.co" target="_blank" class="web-btn">Ir al sitio web</a>
+      </div>
+
     </div>
 
-    <div class="asesor">
-      <img src="luis-buitrago.jpg" alt="Luis Buitrago">
-      <h3>Luis Buitrago</h3>
-      <p>📧 Ventas1@tvymas.com.co</p>
-      <a href="mailto:Ventas1@tvymas.com.co" class="email-btn">Enviar correo</a>
-      <a href="https://wa.me/573113609370?text=Hola%20Luis,%20estoy%20interesado%20en%20los%20productos%20y%20servicios%20de%20TVYMAS." target="_blank" class="whatsapp-btn">WhatsApp</a>
-      <a href="https://www.tvymas.com.co" target="_blank" class="web-btn">Ir al sitio web</a>
+    <div class="corporativo">
+      <h3>WhatsApp Corporativo</h3>
+      <p>📱 <strong>+57 323 430 2484</strong></p>
+      <a href="https://wa.me/573234302484?text=Hola,%20quiero%20información%20sobre%20los%20servicios%20de%20TVYMAS." target="_blank">Contactar por WhatsApp</a>
     </div>
   </section>
 
