@@ -2,11 +2,138 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TVYMAS Contacto</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+
+    .logo-header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e6f0fa;
+    }
+
+    .logo-header img {
+      max-width: 200px;
+      height: auto;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .intro a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .asesores {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .asesores h2 {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 1.5rem;
+    }
+
+    .asesor {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .asesor img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    .asesor h3 {
+      margin: 0.5rem 0;
+      color: #003366;
+    }
+
+    .asesor p {
+      margin: 0.3rem 0;
+    }
+
+    .asesor a {
+      display: block;
+      margin: 0.3rem 0;
+      padding: 0.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+    }
+
+    .email-btn {
+      background-color: #0072c6;
+    }
+
+    .web-btn {
+      background-color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #e6f0fa;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a TVYMAS</h1>
-  <p>Esta es la página de contacto.</p>
+
+  <header class="logo-header">
+    <img src="logo-tvymas.png" alt="Logo TVYMAS">
+  </header>
+
+  <section class="intro">
+    <h1>Bienvenido a TVYMAS</h1>
+    <p>Visita nuestro sitio oficial: <a href="https://www.tvymas.com.co" target="_blank">www.tvymas.com.co</a></p>
+  </section>
+
+  <section class="asesores">
+    <h2>Nuestro equipo</h2>
+
+    <div class="asesor">
+      <img src="paola-beltran.jpg" alt="Paola Beltrán">
+      <h3>Paola Beltrán</h3>
+      <p>📧 Ventas2@tvymas.com.co</p>
+      <a href="mailto:Ventas2@tvymas.com.co" class="email-btn">Enviar correo</a>
+      <a href="https://wa.me/573185216211?text=Hola%20Andrea,%20estoy%20interesado%20en%20los%20productos%20y%20servicios%20de%20TVYMAS." target="_blank" class="whatsapp-btn">WhatsApp</a>
+      <a href="https://www.tvymas.com.co" target="_blank" class="web-btn">Ir al sitio web</a>
+    </div>
+
+    <div class="asesor">
+      <h3>Luis Buitrago</h3>
+      <p>📧 Ventas1@tvymas.com.co</p>
+      <a href="mailto:Ventas1@tvymas.com.co" class="email-btn">Enviar correo</a>
+      <a href="https://wa.me/573113609370?text=Hola%20Luis,%20estoy%20interesado%20en%20los%20productos%20y%20servicios%20de%20TVYMAS." target="_blank" class="whatsapp-btn">WhatsApp</a>
+      <a href="https://www.tvymas.com.co" target="_blank" class="web-btn">Ir al sitio web</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TVYMAS. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
