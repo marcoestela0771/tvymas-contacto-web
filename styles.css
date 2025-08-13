@@ -1,12 +1,146 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: #f4f8fb;
+  color: #333;
 }
-h1 {
-  color: #004080;
-  margin-top: 40px;
+
+.logo-header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e6f0fa;
+}
+
+.logo-header img {
+  max-width: 200px;
+  height: auto;
+}
+
+.intro {
+  text-align: center;
+  padding: 1rem;
+}
+
+.intro a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.asesores {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.asesores h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.asesores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.asesor {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.asesor img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.asesor h3 {
+  margin: 0.5rem 0;
+  color: #003366;
+  font-size: 1.3rem;
+}
+
+.asesor p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.asesor a {
+  display: block;
+  margin: 0.4rem 0;
+  padding: 0.6rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.email-btn {
+  background-color: #0072c6;
+}
+
+.web-btn {
+  background-color: #003366;
+}
+
+.corporativo {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.corporativo a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #e6f0fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .asesores-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .asesor {
+    width: 90%;
+  }
+
+  .asesor h3 {
+    font-size: 1.4rem;
+  }
+
+  .asesor p {
+    font-size: 1.05rem;
+  }
+
+  .asesor a {
+    font-size: 1rem;
+  }
 }
